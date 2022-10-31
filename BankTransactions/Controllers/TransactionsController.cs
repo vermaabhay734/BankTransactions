@@ -57,6 +57,7 @@ namespace BankTransactions.Controllers
         {
             if (ModelState.IsValid)
             {
+                transaction.Date = DateTime.Now;
                 _context.Add(transaction);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
