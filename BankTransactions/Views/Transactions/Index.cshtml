@@ -41,9 +41,9 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Amount)
             <td>
-                <a asp-action="Edit" asp-route-id="@item.TransactionId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.TransactionId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.TransactionId">Delete</a>
+                <a asp-action="Details" asp-route-id="@item.TransactionId" class="btn btn-sm"><i class="fa-solid fa-info"></i></a> 
+                <a asp-action="Edit" asp-route-id="@item.TransactionId" class="btn btn-sm btn-success"><i class="fa-solid fa-pencil"></i></a> 
+                <a asp-action="Delete" asp-route-id="@item.TransactionId" class="btn btn-sm btn-danger"><i class="fa-solid fa-trash"></i></a>
             </td>
         </tr>
 }
